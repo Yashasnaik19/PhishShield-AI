@@ -1,0 +1,8 @@
+{
+  "name": "PhishShield AI — Intelligent Phishing Detection and Security Awareness Platform",
+  "description": "Enterprise-grade cybersecurity platform combining deterministic heuristic rules and Gemini AI for real-time email, SMS, and URL threat detection and security awareness education.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

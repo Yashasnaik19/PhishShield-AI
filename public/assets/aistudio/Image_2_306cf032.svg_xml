@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 90" fill="none">
+  <defs>
+    <linearGradient id="shieldGrad" x1="0" y1="0" x2="60" y2="70" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#06B6D4"/>
+      <stop offset="50%" stop-color="#3B82F6"/>
+      <stop offset="100%" stop-color="#8B5CF6"/>
+    </linearGradient>
+    <linearGradient id="glowG" x1="10" y1="10" x2="50" y2="60" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#22D3EE" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#A855F7" stop-opacity="0.2"/>
+    </linearGradient>
+    <filter id="shieldGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+  <!-- Shield Icon Graphic -->
+  <g transform="translate(10, 10)">
+    <!-- Outer Shield Contour -->
+    <path d="M35 5 L62 16 C62 44 48 62 35 69 C22 62 8 44 8 16 L35 5 Z" fill="#0F172A" stroke="url(#shieldGrad)" stroke-width="2.5" filter="url(#shieldGlow)"/>
+    <!-- Inner Cyber Circuit Details -->
+    <path d="M35 15 L52 23 C52 42 42 55 35 60 C28 55 18 42 18 23 L35 15 Z" fill="url(#glowG)" fill-opacity="0.15" stroke="#06B6D4" stroke-width="1.2" stroke-dasharray="3 2"/>
+    <!-- Central AI Neural Core -->
+    <circle cx="35" cy="35" r="7" fill="#06B6D4"/>
+    <circle cx="35" cy="35" r="13" stroke="#8B5CF6" stroke-width="1.5" stroke-opacity="0.7"/>
+    <!-- Circuit nodes -->
+    <line x1="35" y1="22" x2="35" y2="28" stroke="#38BDF8" stroke-width="2"/>
+    <line x1="35" y1="42" x2="35" y2="50" stroke="#38BDF8" stroke-width="2"/>
+    <line x1="22" y1="35" x2="28" y2="35" stroke="#38BDF8" stroke-width="2"/>
+    <line x1="42" y1="35" x2="48" y2="35" stroke="#38BDF8" stroke-width="2"/>
+    <circle cx="35" cy="22" r="2" fill="#22D3EE"/>
+    <circle cx="35" cy="50" r="2" fill="#A855F7"/>
+    <circle cx="22" cy="35" r="2" fill="#22D3EE"/>
+    <circle cx="48" cy="35" r="2" fill="#A855F7"/>
+  </g>
+  <!-- Brand Typography -->
+  <text x="88" y="44" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="28" font-weight="800" fill="#F8FAFC" letter-spacing="-0.5">Phish<tspan fill="#38BDF8">Shield</tspan></text>
+  <rect x="256" y="25" width="46" height="22" rx="4" fill="#0E2848" stroke="#0284C7" stroke-width="1.2"/>
+  <text x="279" y="40" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="700" fill="#38BDF8" text-anchor="middle" letter-spacing="1">AI</text>
+  <text x="89" y="62" font-family="'Inter', system-ui, -apple-system, sans-serif" font-size="11.5" font-weight="500" fill="#94A3B8" letter-spacing="1.8">CYBER THREAT INTELLIGENCE</text>
+</svg>
